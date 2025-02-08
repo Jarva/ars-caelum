@@ -123,15 +123,15 @@ configurations {
 }
 
 dependencies {
-    implementation "com.hollingsworth.ars_nouveau:ars_nouveau-1.21.0:${project.ars_version}"
+    implementation "com.hollingsworth.ars_nouveau:ars_nouveau-1.21.1:${project.ars_version}"
     implementation "software.bernie.geckolib:geckolib-neoforge-${project.minecraft_version}:${project.gecko_version}"
-    implementation "vazkii.patchouli:Patchouli:${project.mc_version}-${project.patchouli_version}"
+    implementation "vazkii.patchouli:Patchouli:1.21-${project.patchouli_version}"
 
     compileOnly "mezz.jei:jei-${project.mc_version}-neoforge-api:${project.jei_version}"
     implementation "mezz.jei:jei-${project.mc_version}-neoforge:${project.jei_version}"
 
-    implementation "top.theillusivec4.curios:curios-neoforge:${project.curios_version}+${project.mc_version}"
-    implementation "com.github.glitchfiend:TerraBlender-neoforge:${project.mc_version}-${project.terrablender_version}"
+    implementation 'com.github.glitchfiend:TerraBlender-neoforge:1.21-4.0.0.0'
+    implementation "top.theillusivec4.curios:curios-neoforge:${curios_version}+1.21"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
